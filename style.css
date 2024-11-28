@@ -11,6 +11,10 @@ body {
     height: 100vh;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .logo {
     height: 25px;
     width: 15px;
