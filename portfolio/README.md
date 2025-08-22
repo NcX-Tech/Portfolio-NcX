@@ -1,102 +1,99 @@
-# Portfólio NcX - React + Next.js
+# Portfolio NcX
 
-Este é o portfólio pessoal de Brenno Souza, transformado de HTML/CSS/JavaScript para React e Next.js.
+Portfolio pessoal desenvolvido com Next.js 14, React 18 e Tailwind CSS.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Deploy no Vercel
 
-- **Next.js 15** - Framework React com App Router
-- **React 18** - Biblioteca para interfaces de usuário
-- **TypeScript** - Tipagem estática para JavaScript
-- **Tailwind CSS** - Framework CSS utilitário
-- **Lucide React** - Ícones modernos e leves
+### Pré-requisitos
 
-## 📁 Estrutura do Projeto
+- Conta no Vercel
+- Repositório no GitHub/GitLab
+- Node.js 18+ instalado
 
-```
-src/
-├── app/                 # App Router do Next.js
-│   ├── globals.css     # Estilos globais
-│   ├── layout.tsx      # Layout principal
-│   └── page.tsx        # Página inicial
-├── components/         # Componentes React
-│   ├── Header.tsx      # Cabeçalho com navegação
-│   ├── Hero.tsx        # Seção principal
-│   ├── Especialidades.tsx # Áreas de expertise
-│   ├── Sobre.tsx       # Informações pessoais
-│   ├── Portfolio.tsx   # Projetos
-│   ├── Formulario.tsx  # Formulário de contato
-│   └── Footer.tsx      # Rodapé
-public/
-├── IMG/               # Logos e imagens principais
-└── images/            # Imagens dos projetos
-```
+### Passos para Deploy
 
-## 🛠️ Instalação
-
-1. Clone o repositório:
+1. **Clone o repositório**
 
 ```bash
-git clone <url-do-repositorio>
-cd portfolio-ncx
+git clone <seu-repositorio>
+cd portfolio
 ```
 
-2. Instale as dependências:
+2. **Instale as dependências**
 
 ```bash
 npm install
 ```
 
-3. Execute o projeto em modo de desenvolvimento:
+3. **Teste o build localmente**
 
 ```bash
-npm run dev
+npm run build
 ```
 
-4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
+4. **Deploy no Vercel**
+   - Acesse [vercel.com](https://vercel.com)
+   - Faça login com sua conta GitHub/GitLab
+   - Clique em "New Project"
+   - Importe seu repositório
+   - O Vercel detectará automaticamente que é um projeto Next.js
+   - Clique em "Deploy"
 
-## 🚀 Scripts Disponíveis
+### Configurações do Vercel
 
-- `npm run dev` - Executa o projeto em modo de desenvolvimento
-- `npm run build` - Constrói o projeto para produção
-- `npm run start` - Executa o projeto em modo de produção
-- `npm run lint` - Executa o linter ESLint
+O projeto já está configurado com:
 
-## 🎨 Características
+- `vercel.json` otimizado
+- `next.config.js` simplificado
+- Versões estáveis das dependências
+- Página 404 personalizada
+- Arquivos SEO (robots.txt, sitemap.xml)
 
-- **Design Responsivo** - Funciona perfeitamente em dispositivos móveis e desktop
-- **Navegação Suave** - Scroll automático para as seções
-- **Menu Mobile** - Menu hambúrguer para dispositivos móveis
-- **Formulário Interativo** - Formulário de contato funcional
-- **Animações CSS** - Efeitos visuais e transições suaves
-- **SEO Otimizado** - Metadados e estrutura semântica
+### Estrutura do Projeto
 
-## 📱 Responsividade
+```
+src/
+├── app/           # App Router do Next.js 14
+├── components/    # Componentes React
+└── globals.css    # Estilos globais com Tailwind CSS
+```
 
-O portfólio é totalmente responsivo e se adapta a diferentes tamanhos de tela:
+### Tecnologias
 
-- **Desktop**: Layout em coluna com navegação horizontal
-- **Tablet**: Layout adaptativo com elementos reorganizados
-- **Mobile**: Layout em coluna única com menu hambúrguer
+- **Next.js 14** - Framework React
+- **React 18** - Biblioteca de UI
+- **Tailwind CSS 3** - Framework CSS
+- **TypeScript** - Tipagem estática
+- **Lucide React** - Ícones
 
-## 🔧 Personalização
+### Scripts Disponíveis
 
-Para personalizar o portfólio:
+- `npm run dev` - Desenvolvimento local
+- `npm run build` - Build de produção
+- `npm run start` - Servidor de produção
+- `npm run lint` - Verificação de código
 
-1. **Cores**: Edite as variáveis de cor no arquivo `tailwind.config.ts`
-2. **Conteúdo**: Modifique os textos nos componentes React
-3. **Imagens**: Substitua as imagens na pasta `public/`
-4. **Estilos**: Ajuste os estilos no arquivo `globals.css`
+## 📝 Notas de Deploy
 
-## 📧 Contato
+- ✅ Build otimizado para produção
+- ✅ Configurações compatíveis com Vercel
+- ✅ SEO configurado
+- ✅ Página 404 personalizada
+- ✅ Fontes do sistema (sem dependências externas)
 
-- **Instagram**: [@souza.bm](https://www.instagram.com/souza.bm/)
-- **GitHub**: [NcX-Tech](https://github.com/NcX-Tech)
-- **LinkedIn**: [ncx-tech](https://www.linkedin.com/in/ncx-tech/)
+## 🔧 Solução de Problemas
 
-## 📄 Licença
+Se encontrar erros 404 no Vercel:
 
-Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir conforme necessário.
+1. Verifique se o build está funcionando localmente
+2. Confirme que todas as dependências estão instaladas
+3. Verifique os logs de build no Vercel
+4. Certifique-se de que o repositório está sincronizado
 
----
+## 📞 Suporte
 
-Desenvolvido com ❤️ por Brenno Souza (NcX)
+Para problemas de deploy, consulte:
+
+- [Documentação do Vercel](https://vercel.com/docs)
+- [Documentação do Next.js](https://nextjs.org/docs)
+- [Issues do repositório](link-para-issues)

@@ -13,9 +13,6 @@ const config: Config = {
         dark: "#000000",
         white: "#ffffff",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
       animation: {
         float: "float 2s ease-in-out infinite alternate",
       },
